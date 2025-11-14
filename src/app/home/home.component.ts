@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HousingLocationComponent } from "../housing-location/housing-location.component";
-import { HousingLocation } from '../housing-location';
+import { HousingLocation } from '../housingLocation';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +15,7 @@ import { HousingLocation } from '../housing-location';
       </form>
     </section>
     <section class="results">
-      <app-housing-location [ housingLocation ] ="housingLocation"/>
+      <app-housing-location  *ngFor="let HousingLocation of housingLocationList" [housingLocation]="HousingLocation" ></app-housing-location>
       
     </section>
   `,
@@ -23,8 +23,8 @@ import { HousingLocation } from '../housing-location';
 })
 export class HomeComponent {
   
-
-  housingLocation: HousingLocation[] = [
+  // agregar lista 
+  housingLocationList: HousingLocation[] = [
      {
       id: 0,
       name: 'Acme Fresh Start Housing',
