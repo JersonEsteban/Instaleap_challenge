@@ -1,0 +1,47 @@
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  gap: 12px;
+  background: #ffffff;
+  padding: 14px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  align-items: center;
+}
+
+input {
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #d7d7d7;
+  border-radius: 12px;
+  width: 220px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+input:focus {
+  border-color: #9651e6;
+  
+}
+
+button.primary {
+  background: #9651e6;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+button.primary:hover {
+  background: #5b54e6;
+  transform: translateY(-2px);
+}
+
